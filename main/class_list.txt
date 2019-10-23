@@ -1,3 +1,6 @@
-person
-billiard ball
-donut
+pothole
+manhole
+blurredLine
+crack
+alligatorCrack
+
