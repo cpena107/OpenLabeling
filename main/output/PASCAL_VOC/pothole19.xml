@@ -1,7 +1,7 @@
 <annotation>
   <folder>input</folder>
   <filename>pothole19.jpg</filename>
-  <path>/home/cpena/OpenLabeling/main/input/pothole19.jpg</path>
+  <path>/home/astar/repos/OpenLabeling/main/input/pothole19.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -11,4 +11,16 @@
     <depth>3</depth>
   </size>
   <segmented>0</segmented>
+  <object>
+    <name>manhole</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>412</xmin>
+      <ymin>420</ymin>
+      <xmax>513</xmax>
+      <ymax>461</ymax>
+    </bndbox>
+  </object>
 </annotation>

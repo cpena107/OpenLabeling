@@ -1,7 +1,7 @@
 <annotation>
   <folder>input</folder>
   <filename>septemberImgs1235.jpg</filename>
-  <path>/home/cpena/OpenLabeling/main/input/septemberImgs1235.jpg</path>
+  <path>/home/astar/repos/OpenLabeling/main/input/septemberImgs1235.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -11,4 +11,16 @@
     <depth>3</depth>
   </size>
   <segmented>0</segmented>
+  <object>
+    <name>manhole</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>248</xmin>
+      <ymin>451</ymin>
+      <xmax>368</xmax>
+      <ymax>506</ymax>
+    </bndbox>
+  </object>
 </annotation>

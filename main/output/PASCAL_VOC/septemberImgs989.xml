@@ -1,7 +1,7 @@
 <annotation>
   <folder>input</folder>
   <filename>septemberImgs989.jpg</filename>
-  <path>/home/cpena/OpenLabeling/main/input/septemberImgs989.jpg</path>
+  <path>/home/astar/repos/OpenLabeling/main/input/septemberImgs989.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -11,4 +11,16 @@
     <depth>3</depth>
   </size>
   <segmented>0</segmented>
+  <object>
+    <name>crack</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>326</xmin>
+      <ymin>405</ymin>
+      <xmax>409</xmax>
+      <ymax>453</ymax>
+    </bndbox>
+  </object>
 </annotation>
