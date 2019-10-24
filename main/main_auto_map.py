@@ -58,13 +58,13 @@ detector = ObjectDetector(graph_path=graph_model_path, score_threshold = OBJECT_
 
 DELAY = 100 # keyboard delay (in milliseconds)
 WITH_QT = False
-try:
-    cv2.namedWindow('Test')
-    cv2.displayOverlay('Test', 'Test QT', 500)
-    WITH_QT = True
-except cv2.error:
-    print('-> Please ignore this error message\n')
-cv2.destroyAllWindows()
+#try:
+#    cv2.namedWindow('Test')
+#    cv2.displayOverlay('Test', 'Test QT', 500)
+#    WITH_QT = True
+#except cv2.error:
+#    print('-> Please ignore this error message\n')
+#cv2.destroyAllWindows()
 
 
 parser = argparse.ArgumentParser(description='Open-source image labeling tool')
@@ -561,7 +561,7 @@ class TrackerManager:
 
         img_index = increase_index(img_index, last_img_index)
         cv2.setTrackbarPos(TRACKBAR_IMG, WINDOW_NAME, img_index)
-        cv2.imshow(WINDOW_NAME, image)
+        #cv2.imshow(WINDOW_NAME, image)
         pressed_key = cv2.waitKey(DELAY)
 
         json_file_data.update({'n_anchor_ids': (anchor_id + 1)})
@@ -611,7 +611,7 @@ class TrackerManager:
 
 
 
-                cv2.imshow(WINDOW_NAME, next_image)
+                #cv2.imshow(WINDOW_NAME, next_image)
                 pressed_key = cv2.waitKey(DELAY)
 
                 img_index = increase_index(img_index, last_img_index)
@@ -715,7 +715,7 @@ if num_colors_missing > 0:
     class_rgb = np.vstack([class_rgb, more_colors])
 
 # create window
-cv2.namedWindow(WINDOW_NAME, cv2.WINDOW_KEEPRATIO)
+#cv2.namedWindow(WINDOW_NAME, cv2.WINDOW_KEEPRATIO)
 cv2.resizeWindow(WINDOW_NAME, 1000, 700)
 
 # selected image
@@ -770,7 +770,7 @@ while True:
     boxes, confidences, classIds =  detector.detect(im_rgb)
 
     if not len(boxes):
-        cv2.imshow(WINDOW_NAME, tmp_img)
+        #cv2.imshow(WINDOW_NAME, tmp_img)
         pressed_key = cv2.waitKey(DELAY)
         img_index = increase_index(img_index, last_img_index)
         cv2.setTrackbarPos(TRACKBAR_IMG, WINDOW_NAME, img_index)
@@ -805,7 +805,7 @@ while True:
             img_index = increase_index(img_index, last_img_index)
             cv2.setTrackbarPos(TRACKBAR_IMG, WINDOW_NAME, img_index)
 
-            cv2.imshow(WINDOW_NAME, tmp_img)
+            #cv2.imshow(WINDOW_NAME, tmp_img)
             pressed_key = cv2.waitKey(DELAY)
 
 

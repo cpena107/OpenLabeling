@@ -1,0 +1,14 @@
+<annotation>
+  <folder>input</folder>
+  <filename>pothole12891.jpg</filename>
+  <path>/home/cpena/OpenLabeling/main/input/pothole12891.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>2560</width>
+    <height>1440</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+</annotation>
